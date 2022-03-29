@@ -1,0 +1,18 @@
+.operations {
+  display: flex;
+  gap: 20px;
+}
+
+.operations .edit {
+  cursor: pointer;
+  color: rgb(45, 112, 236);
+}
+
+.operations .delete {
+  cursor: pointer;
+  color: rgb(245, 35, 53);
+}
+
+/*.ant-table-cell {
+  text-align: center;
+}*/

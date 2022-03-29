@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.edit-modal, .newData-modal {
+  display: flex;
+  flex-direction: column;
+}

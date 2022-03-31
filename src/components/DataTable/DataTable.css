@@ -13,6 +13,12 @@
   color: rgb(245, 35, 53);
 }
 
-/*.ant-table-cell {
-  text-align: center;
-}*/
+.ant-table-wrapper {
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.ant-table-content {
+  border-radius: 5px;
+}

@@ -10,7 +10,7 @@ function App() {
   const [modalTitle, setModalTitle] = useState("");
   const [whichModal, setWhichModal] = useState({edit: false, delete: false, newData: false});
   const [newData, setNewData] = useState({id:"", userId: "", title: "", body: ""});
-  const [whichId, setWhichId] = useState(null);
+  const [whichId, setWhichId] = useState(undefined);
 
   const handleNewData = () => {
     setIsModalVisible(true);

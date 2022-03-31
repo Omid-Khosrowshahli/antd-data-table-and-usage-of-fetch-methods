@@ -13,7 +13,7 @@ const DataTable = ({setIsModalVisible, setModalTitle, setWhichModal, data, setDa
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [data]);
 
   const openEditModal = (record) => {
     setIsModalVisible(true);

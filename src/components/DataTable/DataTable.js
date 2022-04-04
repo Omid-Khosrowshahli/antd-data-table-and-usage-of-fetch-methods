@@ -3,7 +3,7 @@ import { Table } from 'antd';
 import 'antd/dist/antd.css';
 import './DataTable.css';
 
-const DataTable = ({setIsModalVisible, setModalTitle, setWhichModal, data, setData, setWhichId}) => {
+const DataTable = ({setIsModalVisible, setModalTitle, setWhichModal, data, setData, setWhichId, isDataUpdated}) => {
   const loadData = async () => {
     const response = await fetch('http://localhost:3000/posts');
     const data = await response.json();
@@ -13,7 +13,7 @@ const DataTable = ({setIsModalVisible, setModalTitle, setWhichModal, data, setDa
 
   useEffect(() => {
     loadData();
-  }, [data]);
+  }, [isDataUpdated]);
 
   const openEditModal = (record) => {
     setIsModalVisible(true);

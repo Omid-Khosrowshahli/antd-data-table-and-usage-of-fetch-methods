@@ -2,7 +2,8 @@ import './MyModal.css';
 import { useState } from 'react';
 import { Modal } from 'antd';
 
-const MyModal = ({isModalVisible, setIsModalVisible, modalTitle, whichModal, data, setData , whichId}) => {
+const MyModal = ({isModalVisible, setIsModalVisible, modalTitle,
+  whichModal, data, setData , whichId,isDataUpdated, setIsDataUpdated}) => {
   const [newData, setNewData] = useState({id:"", userId: "", title: "", body: ""});
   const [isIdEntered, setIsIdEntered] = useState(false);
   const [message, setMessage] = useState(false);
@@ -63,7 +64,8 @@ const MyModal = ({isModalVisible, setIsModalVisible, modalTitle, whichModal, dat
 
       getModifiedData();
     }
-    
+
+    setIsDataUpdated(!isDataUpdated);
     setIsModalVisible(false);
   }
 
